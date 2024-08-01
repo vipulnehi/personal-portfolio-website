@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<link rel="stylesheet" href="intro-of-my-website.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<body>
+<!-- this is our webside navigation bar -->
+ <div class="animation">
+    <header>
+        <nav>
+            <ul class="fa-solid sidebar">
+                <li class="back" onclick= hideSidebar()><a href="#"><i class="fa-solid fa-x" ></i></a></li>
+                <li><a href="#"onclick="location.href='./#my-self-section'">BLOG</a></li>
+                <li><a href="#">ABOUT UD</a></li>
+                <li><a href="#">MORE INFO</a></li>
+                <li><a href="#">GIT HUB</a></li>
+            </ul>
+            <ul>
+                <li><a class="logo" href="#">VIPUL NEGI</a></li>
+                <li class="hideOnMobile"><a href="#">BLOG</a></li>
+                <li class="hideOnMobile"><a href="#">ABOUT UD</a></li>
+                <li class="hideOnMobile"><a href="#">MORE INFO</a></li>
+                <li class="hideOnMobile"><a href="#">GIT HUB</a></li>
+                <li class="fa-solids"><i class="fa-solid fa-bars menu-button" onclick=showSidebar()  hight="14vh"></i></li>
+            </ul>
+        </nav>
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+</script>
+
+    </header>
+
+
+<!-- this is our main containt/ our intro  -->
+
+    <div class="container">
+       <div class="hero-pic">
+           <img src="logo2.jpg" alt="my photo">
+       </div>
+       <div class="hero-text">
+           <h5>I'am Vipul Negi and i am <span class="input"> VIPUL NEGI</span></h5>
+           <h1>VIPUL NEGI</h1>
+           <p>As a dedicated BCA student, I have honed my skills in HTML, CSS, JavaScript, and React, allowing me to create a diverse range of projects and websites. My passion for web development has driven me to complete numerous projects and design captivating layouts. With a keen eye for detail and a commitment to excellence, I consistently strive to deliver high-quality work. I am eager to continue expanding my knowledge and expertise in the field of web development, and I am excited to contribute my skills to future projects.</p>
+           <div class="btn-group">
+               <a href="#" class="btn active" onclick="location.href= './1.pdf'">Download CV</a>
+               <a href="#" class="btn sty" onclick="location.href='./index1.html' ">Contact</a>
+           </div>
+           <div class="social">
+               <!-- <a href="#"><i class="fa-brands fa-facebook"  onclick="location.href='https://github.com/' "></i></i></a> -->
+               <a href="#"><i class="fa-brands fa-linkedin" onclick="location.href='https://www.linkedin.com/in/vipulnegi11'"></i></a>
+               <a href="#"><i class="fa-brands fa-instagram" onclick="location.href='https://www.instagram.com/vipulneg_i/'"></i></a>
+               <a href="#"><i class="fa-brands fa-github"  onclick="location.href='https://github.com/'"></i></a>
+           </div>
+       </div>
+    </div>   
+     <!-- this is for the typing effect -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+     <script>
+
+     
+        var typed=new Typed(".input",{
+            strings:["front end developer","Familiar with modern web development practices and tools, such as Git for version control"
+            ," Passionate about problem-solving and creating diverse projects" , "emonstrated ability to adapt to new technologies and frameworks to improve development processes"],
+            typedSpeed:100, 
+            backSpeed:55, 
+             loop:true
+
+        })
+     </script>
+
+
+<!-- this is our skills set section -->
+<section class="skill-section " id="skill-setion">
+  
+    <div class="skill"><h1 class="new-h1">My Skills</h1>
+
+        <li><h3 class="new-h3">Html</h3>
+            <span class="bar"><span class="htmll" id="html" style=" width: 90%;
+                animation: html 3s;
+                background-color: #007ced; padding-left: 95%;"></span></span>
+        </li>
+
+        <li> <h3 class="new-h3">CSS</h3>
+            <span class="bar"><span class="css" id="css" style=" width: 90%;
+                animation: html 3s;
+                background-color: #007ced; padding-left: 75%;"></span></span>
+        </li>
+
+        <li><h3 class="new-h3">JAVA-Script</h3>
+            <span class="bar"><span class="javascript" id="javascript" style=" width: 90%;
+                animation: html 3s;
+                background-color: #007ced; padding-left: 55%;"></span></span>
+        </li>
+
+        <li> <h3  class="new-h3">REACT</h3>
+            <span class="bar"><span class="react" id="react" style=" width: 90%;
+                animation: html 3s;
+                background-color: #007ced; padding-left: 40%;" ></span></span>
+        </li>
+
+        <li>
+            <h3 class="new-h2">C++</h3>
+            <span class="bar"><span class="" style=" width: 90%;
+                animation: html 3s;
+                background-color: #007ced; padding-left: 30%;"></span></span>
+        </li>
+    </div>
+
+    <div class="my-self-section" id="my-self-section">
+         <h3>ABOUT MY SELF</h3>
+         <p> Hi, I'm Vipul Negi, a passionate front-end developer who thrives on crafting user interfaces and webpages. I'm a constant learner, always experimenting with new technologies and approaches on my personal projects. Exploring diverse solutions and tackling challenges is what fuels my excitement for this field.</p>
+
+         <p>  That's why I'm constantly tinkering and experimenting on my personal projects, trying out different technologies to see what makes them tick.  But the real thrill for me comes from tackling challenges and finding creative solutions.  There's nothing more satisfying than seeing a complex problem turn into a smooth and user-friendly experience.  So, if you're looking for a developer who's passionate, curious, and always up for a challenge, then you've come to the right place! </p>
+    </div>
+</section>
+
+<form name="submit-to-google-sheet" class="submit-to-google-sheet">
+     <p>PLEASE ENTER  YOUR INFORMATION</p>
+    <label for="firstname">First name: </label>
+    <input type="text" name="firstname"  placeholder="ENTER YOUR NAME" required>
+    <br>
+    <br>
+    <label for="Mobile">Mobile: </label>
+    <input type="text" name="Mobile"  placeholder="ENTER YOUR MOBILE" required>
+    <br>
+    <br>
+    <label for="email">email: </label>
+    <input type="email" name="email" placeholder="ENTER YOUR EMAIL"  required >
+    <br>
+    <br>
+    <label for="password">password: </label>
+    <input type="password" name="password"  placeholder="ENTER YOUR PASSWORD" required>
+    <br>
+    <br>
+    <input type="submit" value="Submit" name="submit" class="submit">
+    <span id="sucess"></span>
+</form>
+
+
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx_951314vlctHUV66bSrJyM_GTf7fkop2TgpSZLR8JGhrHRIr8Jy1QAc-ixR1yGGk4/exec'
+  const form = document.forms['submit-to-google-sheet']
+const sucess =document.getElementById('sucess')
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+       sucess.innerHTML="data successfully submited"
+     setTimeout(function(){
+        sucess.innerHTML=""
+     },10)
+     form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+
+</script>
+<section class="">
+<div class="about-containers" id="about-containers">
+    <div class="details-container">
+      <img src="exprence.jpg" 
+      alt="Expericence icon"
+      class="icon"/>
+      <h3>Expericence</h3>
+      <p>1 years <br>Frontend Development</p>
+    </div>
+    
+    <div class="details-container">
+      <img src="education.webp" 
+      alt="Expericence icon"
+      class="icon"/>
+      <h3>Expericence</h3>
+      <p>1 years <br>Frontend Development</p>
+    </div>
+</section>
+    <!-- <div class="̥">
+        <p >I am very  dedicated front-end developer with a deep passion for creating engaging user interfaces and dynamic webpages. My enthusiasm for this field stems from a relentless pursuit of learning, where I continuously explore new technologies and innovative approaches through my personal projects. I thrive on the diversity of solutions and the thrill of overcoming challenges, which constantly fuels my excitement for front-end development.</p>
+    </div> -->
+  </div>
+
+     <footer class="last-sectio">
+          <h3>Thanks for coming </h3>
+     </footer>
+     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+     <script src="index.js"></script>
+</body>
+</html>
